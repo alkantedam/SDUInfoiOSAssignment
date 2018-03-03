@@ -29,8 +29,6 @@ class ClubsViewController: UIViewController, UICollectionViewDelegate, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        clubsCollectionView.delegate = self
-        clubsCollectionView.dataSource = self
         
         self.navigationItem.title = "Clubs"
         self.navigationController?.view.backgroundColor = UIColor.clear
@@ -51,11 +49,18 @@ class ClubsViewController: UIViewController, UICollectionViewDelegate, UICollect
         cell.clubImage.image = clubs[indexPath.row].clubIcon
         cell.clubNameLabel.text = clubs[indexPath.row].clubName
         
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailVC = mainStoryboard.instantiateViewController(withIdentifier: "DetailClubViewController") as! DetailClubViewController
+        detailVC.detailClubName = clubs[indexPath.row].clubName!
+        detailVC.detailClubImage = clubs[indexPath.row].clubIcon!
+        detailVC.detailClubDescription = clubs[indexPath.row].clubDescription!
+       
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 
 

@@ -10,17 +10,24 @@ import UIKit
 
 class DetailClubViewController: UIViewController {
 
+    @IBOutlet weak var detailClubNameLabel: UILabel!
+    @IBOutlet weak var detailClubImageView: UIImageView!
+    @IBOutlet weak var detailClubDescriptionLabel: UILabel!
+    
+    var detailClubName = ""
+    var detailClubImage = UIImage()
+    var detailClubDescription = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        detailClubNameLabel.text! = detailClubName
+        detailClubImageView.image = detailClubImage
+        detailClubDescriptionLabel.text! = detailClubDescription
+        detailClubDescriptionLabel.numberOfLines = 20
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation

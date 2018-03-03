@@ -19,6 +19,11 @@
 		C7B946DF20494F3900AE7E7D /* ClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946DE20494F3900AE7E7D /* ClubCollectionViewCell.swift */; };
 		C7B946E12049516800AE7E7D /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946E02049516800AE7E7D /* Club.swift */; };
 		C7B946E32049A0A500AE7E7D /* DetailClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946E22049A0A500AE7E7D /* DetailClubViewController.swift */; };
+		C7B946E72049BB9000AE7E7D /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946E62049BB9000AE7E7D /* GradientImageView.swift */; };
+		C7B946EE2049BDE400AE7E7D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946ED2049BDE400AE7E7D /* NewsTableViewController.swift */; };
+		C7B946F02049BDFA00AE7E7D /* NewsTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946EF2049BDFA00AE7E7D /* NewsTableTableViewCell.swift */; };
+		C7B946F22049BE2900AE7E7D /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946F12049BE2900AE7E7D /* News.swift */; };
+		C7B946F42049CBA000AE7E7D /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		C7B946DE20494F3900AE7E7D /* ClubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7B946E02049516800AE7E7D /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 		C7B946E22049A0A500AE7E7D /* DetailClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailClubViewController.swift; sourceTree = "<group>"; };
+		C7B946E62049BB9000AE7E7D /* GradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
+		C7B946ED2049BDE400AE7E7D /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		C7B946EF2049BDFA00AE7E7D /* NewsTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableTableViewCell.swift; sourceTree = "<group>"; };
+		C7B946F12049BE2900AE7E7D /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 		C7B946A0204857A100AE7E7D /* SDUInfo */ = {
 			isa = PBXGroup;
 			children = (
+				C7B946D2204905B300AE7E7D /* Models */,
 				C7B946D12049059B00AE7E7D /* Controllers */,
 				C7B946A5204857A100AE7E7D /* Main.storyboard */,
 				C7B946AD204857A100AE7E7D /* Info.plist */,
@@ -125,12 +136,10 @@
 		C7B946D12049059B00AE7E7D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7B946CF204869B200AE7E7D /* ViewController.swift */,
-				C7B946D6204907F300AE7E7D /* FacultyViewController.swift */,
-				C7B946DA2049480F00AE7E7D /* ClubsViewController.swift */,
-				C7B946DE20494F3900AE7E7D /* ClubCollectionViewCell.swift */,
-				C7B946E22049A0A500AE7E7D /* DetailClubViewController.swift */,
-				C7B946D2204905B300AE7E7D /* Models */,
+				C7B946E82049BD0D00AE7E7D /* Main */,
+				C7B946EA2049BD3000AE7E7D /* Faculties */,
+				C7B946EB2049BD3B00AE7E7D /* Clubs */,
+				C7B946EC2049BD6800AE7E7D /* News */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				C7B946D4204905F300AE7E7D /* Faculty.swift */,
+				C7B946E62049BB9000AE7E7D /* GradientImageView.swift */,
 				C7B946E02049516800AE7E7D /* Club.swift */,
+				C7B946F12049BE2900AE7E7D /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +163,42 @@
 				C7B946A1204857A100AE7E7D /* AppDelegate.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		C7B946E82049BD0D00AE7E7D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C7B946CF204869B200AE7E7D /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C7B946EA2049BD3000AE7E7D /* Faculties */ = {
+			isa = PBXGroup;
+			children = (
+				C7B946D6204907F300AE7E7D /* FacultyViewController.swift */,
+			);
+			path = Faculties;
+			sourceTree = "<group>";
+		};
+		C7B946EB2049BD3B00AE7E7D /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				C7B946DA2049480F00AE7E7D /* ClubsViewController.swift */,
+				C7B946DE20494F3900AE7E7D /* ClubCollectionViewCell.swift */,
+				C7B946E22049A0A500AE7E7D /* DetailClubViewController.swift */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
+		C7B946EC2049BD6800AE7E7D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C7B946ED2049BDE400AE7E7D /* NewsTableViewController.swift */,
+				C7B946EF2049BDFA00AE7E7D /* NewsTableTableViewCell.swift */,
+				C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,13 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B946DF20494F3900AE7E7D /* ClubCollectionViewCell.swift in Sources */,
+				C7B946F22049BE2900AE7E7D /* News.swift in Sources */,
 				C7B946E32049A0A500AE7E7D /* DetailClubViewController.swift in Sources */,
 				C7B946D0204869B200AE7E7D /* ViewController.swift in Sources */,
 				C7B946D7204907F300AE7E7D /* FacultyViewController.swift in Sources */,
 				C7B946E12049516800AE7E7D /* Club.swift in Sources */,
+				C7B946F42049CBA000AE7E7D /* NewsDetailViewController.swift in Sources */,
 				C7B946DB2049480F00AE7E7D /* ClubsViewController.swift in Sources */,
 				C7B946A2204857A100AE7E7D /* AppDelegate.swift in Sources */,
 				C7B946D5204905F300AE7E7D /* Faculty.swift in Sources */,
+				C7B946EE2049BDE400AE7E7D /* NewsTableViewController.swift in Sources */,
+				C7B946E72049BB9000AE7E7D /* GradientImageView.swift in Sources */,
+				C7B946F02049BDFA00AE7E7D /* NewsTableTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
