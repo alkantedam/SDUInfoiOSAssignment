@@ -24,6 +24,9 @@
 		C7B946F02049BDFA00AE7E7D /* NewsTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946EF2049BDFA00AE7E7D /* NewsTableTableViewCell.swift */; };
 		C7B946F22049BE2900AE7E7D /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946F12049BE2900AE7E7D /* News.swift */; };
 		C7B946F42049CBA000AE7E7D /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */; };
+		C7E3F61A204AFA730089ADEA /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3F619204AFA730089ADEA /* ContactsViewController.swift */; };
+		C7E3F61C204C4E390089ADEA /* ItemGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3F61B204C4E390089ADEA /* ItemGalleryViewController.swift */; };
+		C7E3F61E204C50250089ADEA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3F61D204C50250089ADEA /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		C7B946EF2049BDFA00AE7E7D /* NewsTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableTableViewCell.swift; sourceTree = "<group>"; };
 		C7B946F12049BE2900AE7E7D /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		C7E3F619204AFA730089ADEA /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		C7E3F61B204C4E390089ADEA /* ItemGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGalleryViewController.swift; sourceTree = "<group>"; };
+		C7E3F61D204C50250089ADEA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +142,12 @@
 		C7B946D12049059B00AE7E7D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7E3F659204C5BC90089ADEA /* Gallery */,
 				C7B946E82049BD0D00AE7E7D /* Main */,
 				C7B946EA2049BD3000AE7E7D /* Faculties */,
 				C7B946EB2049BD3B00AE7E7D /* Clubs */,
 				C7B946EC2049BD6800AE7E7D /* News */,
+				C7E3F618204AFA480089ADEA /* Contacts */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +207,23 @@
 				C7B946F32049CBA000AE7E7D /* NewsDetailViewController.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		C7E3F618204AFA480089ADEA /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C7E3F619204AFA730089ADEA /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C7E3F659204C5BC90089ADEA /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				C7E3F61B204C4E390089ADEA /* ItemGalleryViewController.swift */,
+				C7E3F61D204C50250089ADEA /* PageViewController.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B946DF20494F3900AE7E7D /* ClubCollectionViewCell.swift in Sources */,
+				C7E3F61C204C4E390089ADEA /* ItemGalleryViewController.swift in Sources */,
+				C7E3F61A204AFA730089ADEA /* ContactsViewController.swift in Sources */,
 				C7B946F22049BE2900AE7E7D /* News.swift in Sources */,
 				C7B946E32049A0A500AE7E7D /* DetailClubViewController.swift in Sources */,
 				C7B946D0204869B200AE7E7D /* ViewController.swift in Sources */,
@@ -348,6 +375,7 @@
 				C7B946EE2049BDE400AE7E7D /* NewsTableViewController.swift in Sources */,
 				C7B946E72049BB9000AE7E7D /* GradientImageView.swift in Sources */,
 				C7B946F02049BDFA00AE7E7D /* NewsTableTableViewCell.swift in Sources */,
+				C7E3F61E204C50250089ADEA /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

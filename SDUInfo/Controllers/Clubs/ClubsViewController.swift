@@ -31,9 +31,10 @@ class ClubsViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         
         self.navigationItem.title = "Clubs"
-        self.navigationController?.view.backgroundColor = UIColor.clear
-        self.navigationController?.navigationBar.tintColor = UIColor(red: 1.0/255.0, green: 1.0/255.0, blue: 1.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
         
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int

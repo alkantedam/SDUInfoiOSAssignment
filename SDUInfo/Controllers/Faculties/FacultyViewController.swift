@@ -39,7 +39,10 @@ class FacultyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Faculties"
-        self.navigationController?.navigationBar.tintColor = UIColor(red: 48.0/255.0, green: 62.0/255.0, blue: 78.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         switch facultiesSegmentControll.selectedSegmentIndex {
         case 0:
             loadFaculty(caseNumber: 0)
